@@ -22,14 +22,14 @@ fetch('travel_recommendation.json')
                 });
             }
 
-            document.querySelector('.hero').classList.add('hidden');
+            document.getElementById('hero').classList.add('hidden');
             displayResults(results);
         });
 
         document.getElementById('clearBtn').addEventListener('click', () => {
             document.getElementById('searchInput').value = '';
             document.getElementById('resultsContainer').innerHTML = '';
-            document.querySelector('.hero').classList.remove('hidden');
+            document.getElementById('hero').classList.remove('hidden');
         });
 
     })
