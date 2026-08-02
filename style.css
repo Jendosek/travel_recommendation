@@ -87,6 +87,10 @@ nav {
     align-items: center;
 }
 
+.hero.hidden {
+    display: none;
+}
+
 .social-links {
     position: absolute;
     left: 16px;
