@@ -73,3 +73,55 @@ nav {
 .nav-search button:hover {
     background-color: #155f55;
 }
+
+/*Головна сторінка*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 39px);
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.hero-content {
+    margin-left: 80px;
+    max-width: 520px;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.btn-book {
+    background-color: #1a7a6e;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-book:hover {
+    background-color: #155f55;
+}
