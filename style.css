@@ -74,12 +74,12 @@ nav {
     background-color: #155f55;
 }
 
-/*Головна сторінка*/
+/* Головна сторінка */
 
 .hero {
     position: relative;
     width: 100%;
-    height: calc(100vh - 39px);
+    height: calc(100vh - 32px);
     background-image: url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -87,9 +87,25 @@ nav {
     align-items: center;
 }
 
+.social-links {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .social-links a {
     color: white;
     font-size: 1.3rem;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
 }
 
 .hero-content {
@@ -123,5 +139,232 @@ nav {
 }
 
 .btn-book:hover {
+    background-color: #155f55;
+}
+
+/* Результати пошуку */
+
+#resultsContainer {
+    padding: 30px 60px;
+    background-color: #1a2332;
+    min-height: 100px;
+}
+
+#resultsContainer:empty {
+    display: none;
+}
+
+.results-title {
+    color: #e07b00;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.results-grid {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.result-card {
+    width: 280px;
+    color: white;
+}
+
+.result-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 2px solid white;
+}
+
+.result-info h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: underline;
+    margin: 10px 0 6px;
+    text-align: center;
+}
+
+.result-info p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.no-results {
+    color: white;
+    font-size: 1rem;
+}
+
+/* About Us */
+
+.about-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-start;
+}
+
+.about-content {
+    margin-left: 80px;
+    padding: 40px 0;
+    color: white;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-content h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+.company-info {
+    max-width: 900px;
+    margin-bottom: 60px;
+}
+
+.company-info p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.team-section h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.team-grid {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member i {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.team-member h3 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.team-member p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.role {
+    background-color: #1a7a6e;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+}
+
+/* Contact Us */
+
+.contact-hero {
+    position: relative;
+    min-height: 100vh;
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.contact-left {
+    color: white;
+    margin-left: 60px;
+}
+
+.contact-left h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.contact-left p {
+    font-size: 1rem;
+}
+
+.contact-form {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 420px;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    padding: 10px 14px;
+    color: white;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #1a7a6e;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.btn-submit:hover {
     background-color: #155f55;
 }
